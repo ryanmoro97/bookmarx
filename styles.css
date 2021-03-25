@@ -1,0 +1,252 @@
+body            { font-family: arial, sans-serif ;
+  background:
+  /* top, transparent black, faked with gradient */ 
+  linear-gradient(
+  rgba(6, 0, 31, 0.93),
+  rgba(1, 4, 31, 0.7));
+  color:rgb(195, 215, 236);
+}
+nav { font-weight: bold;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: rgb(192, 98, 236);
+    font-family: monospace;
+    font-size: 1.25em;
+    border: 2px solid #13374b;
+    text-align: center;
+    width: 10em;
+    background-color: rgb(39, 12, 85); }
+nav ul { display: none;
+    list-style: none;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0; }
+nav:hover ul    { display: block; }
+nav ul li { border-top: 2px solid rgb(4, 48, 22);
+    border-radius: 5px;
+    background-color: rgb(12, 0, 41);
+    width: 10em;
+    color: rgb(192, 98, 236);
+    font-size: 1em}
+nav ul li:hover { background-color: rgb(39, 12, 85);
+    border: 1.25em;}
+a               { text-decoration: none; }
+
+table {
+    border: 3px solid rgb(195, 215, 236);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+caption {
+    font-family: "Lucida Console", monospace;
+}
+
+.box { border: 1px solid black; padding: 10px }
+img {
+    margin: auto;
+    display: block;
+  }
+figcaption {
+    font-style: italic;
+    padding: 2px;
+    font-size: 12px;
+    text-align: center;
+  }
+h1 {
+    text-align: center;
+    border: 2px solid #13374b;
+    border-radius: 10px;
+    font-family: Copperplate;
+}
+h2 {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: "Lucida Console", monospace;
+}
+h3 {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: "Lucida Console", monospace;
+}
+h4{
+    font-family: "Lucida Console", monospace;
+    font-size: 1.35em;
+    margin-left: 10px;
+}
+h5 {font-size: 1.15em;
+    margin-left: 10px;
+    font-family: "Lucida Console", monospace;
+}
+
+.tab { margin-left: 40px; }
+button{
+    border-radius: 15px;
+    text-align: center;
+    margin:auto;
+    color: rgb(192, 98, 236);
+    border: 2px solid #090d4b;
+    display:block;
+    background-color: rgb(39, 12, 85);
+    font-size: 26px;
+    margin-top: 5px;
+}
+button:hover{
+    transform: scale(1.1);
+}
+div{
+    margin-left: 10px;
+    font-family: "Lucida Console", monospace;
+}
+li {
+    font-family: monospace;
+    font-size: 1.21em;
+    margin-left: 0px;
+}
+
+#unit1{border: 2px solid #13374b;}
+#unit1quiz{border: 2px solid #13374b;}
+#unit2{border: 2px solid #13374b;}
+#unit2quiz{border: 2px solid #13374b;}
+#unit3{border: 2px solid #13374b;}
+#unit3quiz{border: 2px solid #13374b;}
+img {
+    border-radius: 10px;
+}
+p {
+    font-family: monospace;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1.25em;
+}
+
+a{
+  color: rgb(195, 215, 236);
+}
+
+hr { 
+  border-radius: 25px;
+  display: block; height: 2px;
+  border: 10px; border-top: 5px solid #13374b;
+}
+
+canvas {
+    border: 1px solid rgb(195, 215, 236);
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+
+#rightarrow {
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    vertical-align: top
+}
+#rightarrow:hover {
+    transform: scale(1.25);
+}
+
+#leftarrow {
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    vertical-align: top
+}
+#leftarrow:hover{
+    transform: scale(1.25);
+}
+#caption {
+    text-align: center;
+}
+
+#buttons{
+    text-align: center;
+
+}
+
+#playimg{
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+#playimg:hover{
+    transform: scale(1.25);
+}
+
+#pause{
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+    display:block;
+    margin:auto;
+}
+#pause:hover{
+    transform: scale(1.25);
+}
+
+#random\/seq {
+    /*position: absolute;*/
+    text-align: center;
+}
+
+#errmsg1{
+     font-size: 0.6em;
+     color: brown;
+ }
+#errmsg2{
+    font-size: 0.6em;
+    color: brown;
+}
+#errmsg3{
+    font-size: 0.6em;
+    color: brown;
+}
+#errmsg4{
+    font-size: 0.6em;
+    color: brown;
+}
+#errmsg5{
+    font-size: 0.6em;
+    color: brown;
+}
+#errmsg6{
+    font-size: 0.6em;
+    color: brown;
+}
+#errmsg7{
+    font-size: 0.6em;
+    color: brown;
+}
+#errmsg8{
+    font-size: 0.6em;
+    color: brown;
+}
+#errmsg8{
+    text-align: center;
+    align-content: center;
+    font-size: 0.6em;
+    color: brown;
+}
+#errmsg9{
+    text-align: center;
+    margin-right: 10px;
+    font-size: 0.6em;
+    color: brown;
+}
+
+#prec{
+    font-size: 1.25em;
+}
