@@ -7,6 +7,13 @@ $server = "localhost";
 $db = "bookmarks";
 $conn = new mysqli($server, $db_user, $db_pw, $db);
 
+
+console_log("starting");
+echo mysqli_connect_error();
+if ($conn->connect_error) {
+    echo "dicks";
+}
+
 if(isset($_POST['username'], $_POST['password'])) {
     //check if credentials are entered
     $username = $_POST['username'];
@@ -24,6 +31,7 @@ if(isset($_POST['signIn'])){
     // check login credentials
     if(mysqli_num_rows($credentials_query) == 1){
         // valid - login to user page
+        console_log("valid");
         setcookie("username", $username);
         header('Location: userpage.php');
         exit;
@@ -46,6 +54,16 @@ else if(isset($_POST['signUp'])){
         header("Location: main.php");
         exit;
     }
+    else if($username == ""){
+        $_SESSION['errmsg2'] = true;
+        header("Location: main.php");
+        exit;
+    }
+    else if($password == ""){
+        $_SESSION['errmsg3'] = true;
+        header("Location: main.php");
+        exit;
+    }
     else{
         //username available -- register user
         mysqli_query($conn,"INSERT INTO `login` (`username`, `password`) VALUES ('$username', '$password')");
@@ -53,6 +71,15 @@ else if(isset($_POST['signUp'])){
         header('Location: userpage.php');
         exit;
     }
+}
+
+function console_log($output, $with_script_tags = true) {
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) .
+        ');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
 }
 
 

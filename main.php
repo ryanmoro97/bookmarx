@@ -1,7 +1,7 @@
 <html lang="en-us">
     <head>
         <title>Bookmarks</title>
-        <link rel = "stylesheet" type = "text/css" href = "styles.css">
+        <link rel = "stylesheet" type = "text/css" href = "../shared/styles/styles.css">
     </head>
     <body>
     <h1>Karl BookMarx</h1>
@@ -20,6 +20,12 @@
     else if(isset($_SESSION['errmsg1'])){
         echo '<div id = "errmsg9">Username is taken</div>';
     }
+    else if(isset($_SESSION['errmsg2'])){
+        echo '<div id = "errmsg9">Username cannot be empty</div>';
+    }
+    else if(isset($_SESSION['errmsg3'])){
+        echo '<div id = "errmsg9">Password cannot be empty</div>';
+    }
     ?>
 
 
@@ -36,15 +42,23 @@
 
     <hr><br><br>
     <h3>Top sites</h3>
+    <div id = "bm">
     <?php
-    session_start();
     $db_user = "root";
     $db_pw = "7r46QGmp";
     $server = "localhost";
     $db = "bookmarks";
     $conn = new mysqli($server, $db_user, $db_pw, $db);
+    $topBookmarks = mysqli_query($conn, "SELECT bookmark, COUNT(*) FROM bookmarks GROUP BY bookmark ORDER BY COUNT(*) DESC");
+    for($i = 0; $i < 10; $i++){
+        $bookmark = mysqli_fetch_row($topBookmarks);
+        echo "<a href = ".$bookmark[0]." target='_blank'><u>$bookmark[0]</u></a><br><br>";
+    }
     ?>
+    </div>
+    <div id = "bookmarks"></div>
 
-    <?php unset($_SESSION['errmsg']); unset($_SESSION['errmsg1']); ?>
+    <?php unset($_SESSION['errmsg']); unset($_SESSION['errmsg1']);
+            unset($_SESSION['errmsg2']);unset($_SESSION['errmsg3']);?>
      </body>
 </html>

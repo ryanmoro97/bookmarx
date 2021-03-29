@@ -83,7 +83,7 @@ h5 {font-size: 1.15em;
 
 .tab { margin-left: 40px; }
 button{
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     margin:auto;
     color: rgb(192, 98, 236);
@@ -91,6 +91,7 @@ button{
     display:block;
     background-color: rgb(39, 12, 85);
     font-size: 26px;
+    font-family: monospace;
     margin-top: 5px;
 }
 button:hover{
@@ -247,6 +248,35 @@ canvas {
     color: brown;
 }
 
+#logout{
+    position: absolute;
+    right: 5px;
+    margin-top: 6px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: rgb(192, 98, 236);
+    font-family: monospace;
+    font-size: 1.25em;
+}
+
 #prec{
     font-size: 1.25em;
+}
+
+div#bm {
+    padding-left: 20px;
+}
+div#editBookmarks {
+    padding-left: 20px;
+    align-items: flex-start;
+}
+
+#editBtns
+{
+    width:100%;
+    text-align: center;
+}
+.btn
+{
+    display: inline-block;
 }
