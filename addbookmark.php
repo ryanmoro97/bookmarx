@@ -1,7 +1,7 @@
 <?php
 $db_user = "root";
 $db_pw = "7r46QGmp";
-$server = "localhost";
+$server = "bookmarkdb";
 $db = "bookmarks";
 $username = $_COOKIE['username'];
 if(isset($_POST['bookmark'])){

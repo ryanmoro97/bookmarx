@@ -3,7 +3,7 @@
 session_start();
 $db_user = "root";
 $db_pw = "7r46QGmp";
-$server = "localhost";
+$server = "bookmarkdb";
 $db = "bookmarks";
 $conn = new mysqli($server, $db_user, $db_pw, $db);
 
