@@ -1,7 +1,7 @@
 <html lang="en-us">
     <head>
         <title>Bookmarks</title>
-        <link rel = "stylesheet" type = "text/css" href = "../shared/styles/styles.css">
+        <link rel = "stylesheet" type = "text/css" href = "styles.css">
     </head>
     <body>
     <h1>Karl BookMarx</h1>

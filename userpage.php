@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Bookmarks</title>
-    <link rel = "stylesheet" type = "text/css" href = "../shared/styles/styles.css">
+    <link rel = "stylesheet" type = "text/css" href = "styles.css">
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
