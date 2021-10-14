@@ -11,7 +11,7 @@ if(isset($_POST['bookmark'])){
     echo "submitted";
 }
 else{
-    echo "invalid bookmark";
+    echo "Invalid bookmark";
 }
 
 
